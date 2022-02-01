@@ -11,7 +11,7 @@ pipeline {
     stage('Scan') {
       steps {
         echo 'Scanning repository'
-        java -jar 'C:\\Unified Agent\\wss-unified-agent.jar' .
+        java -jar "C:\\Unified Agent\\wss-unified-agent.jar" -d .
       }
     }
   }

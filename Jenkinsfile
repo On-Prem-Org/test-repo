@@ -11,7 +11,7 @@ pipeline {
     stage('Scan') {
       steps {
         echo 'Scanning repository'
-        bat 'java -jar "C:\\Unified_Agent\\wss-unified-agent.jar" -c "C:\\Unified_Agent\\wss-unified-agent.config" -d "." -product "jenkinsTraining" -project "jenkinsTraining"
+        bat 'java -jar "C:\\Unified_Agent\\wss-unified-agent.jar" -c "C:\\Unified_Agent\\wss-unified-agent.config" -d "." -product "jenkinsTraining" -project "jenkinsTraining"'
       }
     }
   }
